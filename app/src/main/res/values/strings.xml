@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Masak apa nich</string>
+    <string name="add_item">add item</string>
+    <string name="input_formTxt">Tambah item</string>
+    <string name="judul_masakan_hint">Judul masakan</string>
+    <string name="bahan_dasar_hint">Bahan dasar</string>
+    <string name="save_buttonTxt">Simpan</string>
 </resources>

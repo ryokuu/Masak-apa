@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "302288628595",
+    "firebase_url": "https://masak-apa-nich-default-rtdb.asia-southeast1.firebasedatabase.app",
+    "project_id": "masak-apa-nich",
+    "storage_bucket": "masak-apa-nich.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:302288628595:android:4c0678eb5e72e32854b306",
+        "android_client_info": {
+          "package_name": "com.nooryoku.masakapa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "302288628595-u999qceotb8k8fomitg9lilghpsvomak.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyGHbmjsyEGQl2Nk3n176Pv2oRRtg9_9c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "302288628595-u999qceotb8k8fomitg9lilghpsvomak.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
