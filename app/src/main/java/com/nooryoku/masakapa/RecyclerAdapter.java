@@ -17,13 +17,13 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.myView
     private ArrayList<DataMasakan> mDataMasakan;
 
     static class myViewHolder extends RecyclerView.ViewHolder {
-        public TextView tv_judulMasakan;
+        public TextView tv_judulMasakan, tv_tanggal;
 
 
         public myViewHolder(View itemView) {
             super(itemView);
             tv_judulMasakan = itemView.findViewById(R.id.tv_judulMasakan);
-
+            tv_tanggal = itemView.findViewById(R.id.tv_tanggal);
 
         }
     }
@@ -46,6 +46,7 @@ public class RecyclerAdapter extends RecyclerView.Adapter<RecyclerAdapter.myView
         DataMasakan currentMasakan = mDataMasakan.get(position);
 
         holder.tv_judulMasakan.setText(currentMasakan.getmMasakan());
+        holder.tv_tanggal.setText(currentMasakan.getmTanggal());
     }
 
     @Override

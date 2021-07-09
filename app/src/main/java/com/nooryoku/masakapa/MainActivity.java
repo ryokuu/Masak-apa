@@ -1,5 +1,6 @@
 package com.nooryoku.masakapa;
 
+import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -9,6 +10,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -25,13 +27,8 @@ public class MainActivity extends AppCompatActivity implements DialogForm.Dialog
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        /*
-        Intent intent = getIntent();
-        String masakanData = intent.getStringExtra("judul_masakan");
-        String bahanData = intent.getStringExtra("bahan_dasar");
-        String rempahData = intent.getStringExtra("rempah");
-
-         */
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setTitle("History Masakan");
 
 
         buildRecycleView();
@@ -43,18 +40,18 @@ public class MainActivity extends AppCompatActivity implements DialogForm.Dialog
             public void onClick(View v) {
                 DialogForm dialogForm = new DialogForm();
                 dialogForm.show(getSupportFragmentManager(), "form");
+
             }
         });
     }
 
     @Override
-    public void sendTexts(String dataMasakan, String dataBahan, String dataRempah) {
-
-        insertItem(dataMasakan, dataBahan, dataRempah);
+    public void sendTexts(String dataMasakan, String dataBahan, String dataRempah,String dataTanggal) {
+        insertItem(dataMasakan, dataBahan, dataRempah, dataTanggal);
     }
 
-    private void insertItem(String masakan, String bahanUtama, String rempah) {
-        mDataMasakan.add(new DataMasakan(masakan, bahanUtama, rempah));
+    private void insertItem(String masakan, String bahanUtama, String rempah, String tanggal) {
+        mDataMasakan.add(new DataMasakan(masakan, bahanUtama, rempah, tanggal));
         mAdapter = new RecyclerAdapter(mDataMasakan);
         mAdapter.notifyItemInserted(mDataMasakan.size());
     }

@@ -8,4 +8,5 @@
     <string name="ic_judul_masakan">Judul Masakan</string>
     <string name="bahan_rempah_hint">Rempah</string>
     <string name="foto_masakan">foto masakan</string>
+    <string name="ic_tanggal_dibuat">Dibuat pada: </string>
 </resources>

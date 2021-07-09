@@ -1,22 +1,20 @@
 package com.nooryoku.masakapa;
 
-import java.util.Date;
-
 public class DataMasakan {
 
     private String mMasakan;
     private String mBahanUtama;
     private String mRempah;
-    private Date mTanggal;
+    private String mTanggal;
 
     public DataMasakan () {
     }
 
-    public DataMasakan(String masakan, String bahanUtama, String rempah) {
+    public DataMasakan(String masakan, String bahanUtama, String rempah, String tanggal) {
         this.mMasakan = masakan;
         this.mBahanUtama = bahanUtama;
         this.mRempah = rempah;
-        //this.mTanggal = tanggal;
+        this.mTanggal = tanggal;
     }
 
     public String getmMasakan() {
@@ -31,7 +29,7 @@ public class DataMasakan {
         return mRempah;
     }
 
-    public Date getmTanggal() {
+    public String getmTanggal() {
         return mTanggal;
     }
 
