@@ -1,32 +1,38 @@
 package com.nooryoku.masakapa;
 
-public class DataMasakan {
-    private String key;
+import java.util.Date;
 
-    private String masakan;
-    private String bahan_utama;
+public class DataMasakan {
+
+    private String mMasakan;
+    private String mBahanUtama;
+    private String mRempah;
+    private Date mTanggal;
 
     public DataMasakan () {
     }
 
-    public DataMasakan(String masakan, String bahan_utama) {
-        this.masakan = masakan;
-        this.bahan_utama = bahan_utama;
+    public DataMasakan(String masakan, String bahanUtama, String rempah) {
+        this.mMasakan = masakan;
+        this.mBahanUtama = bahanUtama;
+        this.mRempah = rempah;
+        //this.mTanggal = tanggal;
     }
 
-    public String getMasakan() {
-        return masakan;
+    public String getmMasakan() {
+        return mMasakan;
     }
 
-    public void setMasakan(String masakan) {
-        this.masakan = masakan;
+    public String getmBahanUtama() {
+        return mBahanUtama;
     }
 
-    public String getBahan_utama() {
-        return bahan_utama;
+    public String getmRempah() {
+        return mRempah;
     }
 
-    public void setBahan_utama(String bahan_utama) {
-        this.bahan_utama = bahan_utama;
+    public Date getmTanggal() {
+        return mTanggal;
     }
+
 }
