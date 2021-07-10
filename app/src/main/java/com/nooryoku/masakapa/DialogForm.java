@@ -3,6 +3,7 @@ package com.nooryoku.masakapa;
 import android.annotation.SuppressLint;
 import android.app.Dialog;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -22,7 +23,7 @@ import java.util.Locale;
 
 import static android.content.ContentValues.TAG;
 
-public class DialogForm extends DialogFragment {
+public class DialogForm extends DialogFragment{
     private RecyclerAdapter mAdapter;
     private DialogFormListener listener;
     EditText et_judulMasakan, et_bahanDasar, et_rempah;
@@ -44,8 +45,6 @@ public class DialogForm extends DialogFragment {
         et_judulMasakan = view.findViewById(R.id.et_judulMasakan);
         et_bahanDasar = view.findViewById(R.id.et_bahanDasar);
         et_rempah = view.findViewById(R.id.et_rempah);
-
-
 
         btn_save = view.findViewById(R.id.btn_save);
         btn_save.setOnClickListener(new View.OnClickListener() {
@@ -113,6 +112,8 @@ public class DialogForm extends DialogFragment {
         }
 
     }
+
+
 
 }
 
