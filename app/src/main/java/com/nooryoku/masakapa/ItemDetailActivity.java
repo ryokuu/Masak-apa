@@ -11,7 +11,7 @@ public class ItemDetailActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.item_detail);
+        setContentView(R.layout.activity_item_detail);
 
         judul = findViewById(R.id.tv_judulMasakan);
         tanggal = findViewById(R.id.tv_tanggal);

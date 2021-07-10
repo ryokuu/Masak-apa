@@ -10,7 +10,7 @@
     <string name="foto_masakan">foto masakan</string>
     <string name="ic_tanggal_dibuat">Dibuat pada: </string>
     <string name="judulMasakanTxt">Judul Masakan</string>
-    <string name="tanggalTxt">Tanggal Dibuat</string>
-    <string name="bahanUtamaTxt">Bahan Utama</string>
-    <string name="rempahTxt">Rempah</string>
+    <string name="tanggalTxt">Tanggal Dibuat: </string>
+    <string name="bahanUtamaTxt">Bahan Utama\t\t\t: </string>
+    <string name="rempahTxt">Rempah\t\t\t\t\t\t\t: </string>
 </resources>
